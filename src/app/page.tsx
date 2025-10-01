@@ -12,7 +12,7 @@ const Home = () => {
       <div className="container mx-auto h-full">
         <div className="flex flex-col xl:flex-row items-center justify-between xl:pt-8 xl:pb-24">
           {/* text */}
-          <div className="text-center xl:text-left order-2 xl:order-none z-[1000]">
+          <div className="text-center xl:text-left order-2 xl:order-none z-50">
             <span className="text-xl">Frontend Developer</span>
             <h1 className="h1 mb-6">
               Hello I&apos;m <br />{" "}
@@ -22,7 +22,7 @@ const Home = () => {
              I excel at building elegant, user-friendly digital experiences and bring proficiency in HTML, CSS, JavaScript, TypeScript, and modern front-end frameworks like React.Js, Next.js and Vue.js to deliver high-quality, responsive web applications.
             </p>
             {/* button and socials */}
-            <div className="flex flex-col xl:flex-row items-center gap-8 z-[1000]">
+            <div className="flex flex-col xl:flex-row items-center gap-8 z-50">
               <a target='_blank' href="https://docs.google.com/document/d/1VKtEyj320KgpmJ7AP48OQVSnw_pZXWFm1d0vuPZD-vo/export?format=pdf">
               <Button
                 variant="outline"

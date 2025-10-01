@@ -13,70 +13,113 @@ import { useState } from "react";
 import WorkSliderBtns from "@/components/WorkSliderBtns";
 
 const projects = [
-  {num: '01', category: 'Frontend', title: 'Global Plug Services', description: 'lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut.', 
-    stack: [
-      {name: 'Next.js'}, { name: 'Tailwind'}, { name: 'Redux Toolkit' }
-    ],
-    image: '/images/gps.png',
-    live: 'https://www.globalplugservices.com/',
-    github: ''
-  },
-  {num: '02', category: 'Frontend', title: 'Global Plug Services CRM', description: 'lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut.', 
-    stack: [
-      {name: 'Next.js'}, { name: 'Tailwind'}, { name: 'Redux Toolkit' }
-    ],
-    image: '/images/gps.png',
-    live: 'https://www.globalplugservices.com/',
-    github: ''
-  },
-  {num: '03', category: 'Frontend', title: 'TheGoldScarf Web App', description: 'lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut.', 
-    stack: [
-      {name: 'Next.js'}, { name: 'Tailwind'}, { name: 'Redux Toolkit' }
-    ],
-    image: '/images/gps.png',
-    live: 'https://www.globalplugservices.com/',
-    github: ''
-  },
-  {num: '04', category: 'Frontend', title: "TheGoldScarf Brand's Dashboard", description: 'lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut.', 
-    stack: [
-      {name: 'Next.js'}, { name: 'Tailwind'}, { name: 'Redux Toolkit' }
-    ],
-    image: '/images/gps.png',
-    live: 'https://www.globalplugservices.com/',
-    github: ''
-  },
-  {num: '05', category: 'Frontend', title: "ScrumSage Web App", description: 'lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut.', 
-    stack: [
-      {name: 'Next.js'}, { name: 'Tailwind'}, { name: 'Redux Toolkit' }
-    ],
-    image: '/images/gps.png',
-    live: 'https://www.globalplugservices.com/',
-    github: ''
-  },
-  {num: '06', category: 'Frontend', title: "WorkWave HR", description: 'lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut.', 
-    stack: [
-      {name: 'Next.js'}, { name: 'Tailwind'}, { name: 'Redux Toolkit' }
-    ],
-    image: '/images/gps.png',
-    live: 'https://www.globalplugservices.com/',
-    github: ''
-  },
-  {num: '07', category: 'Frontend', title: "WorkWave Super Admin", description: 'lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut.', 
-    stack: [
-      {name: 'Next.js'}, { name: 'Tailwind'}, { name: 'Redux Toolkit' }
-    ],
-    image: '/images/gps.png',
-    live: 'https://www.globalplugservices.com/',
-    github: ''
-  },
-  {num: '08', category: 'Frontend', title: "Happy Homes", description: 'lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut.', 
-    stack: [
-      {name: 'Next.js'}, { name: 'Tailwind'}, { name: 'Redux Toolkit' }
-    ],
-    image: '/images/gps.png',
-    live: 'https://www.globalplugservices.com/',
-    github: ''
-  },
+{
+  num: '01',
+  category: 'Frontend',
+  title: 'Global Plug Services',
+  description:
+    'A UK-based company specializing in NIN, visas, ETC, and passport applications. We built their customer-facing website to simplify the application process and showcase their services.',
+  stack: [
+    { name: 'Next.js' }, { name: 'Tailwind' }, {name: 'TypeScript'}, { name: 'Redux Toolkit' }, 
+  ],
+  image: '/images/gps.png',
+  live: 'https://www.globalplugservices.com/',
+  github: 'https://github.com/global-plug-services/gps-webapp'
+},
+{
+  num: '02',
+  category: 'Frontend',
+  title: 'Global Plug Services CRM',
+  description:
+    'A custom CRM solution for managing client applications. Features include application tracking, pricing and discount management, and appointment scheduling for NIN services.',
+  stack: [
+    { name: 'Next.js' }, { name: 'Tailwind' }, {name: 'TypeScript'}, { name: 'Redux Toolkit' }
+  ],
+  image: '/images/gps2.png',
+  live: 'https://crm.globalplugservices.com',
+  github: 'https://github.com/global-plug-services/admin'
+},
+
+{
+  num: '03',
+  category: 'Frontend',
+  title: 'TheGoldScarf Web App',
+  description:
+    'A UK-based platform connecting African fashion brands with customers in Nigeria and beyond. The web app enables seamless browsing and purchasing of authentic fashion pieces.',
+  stack: [
+    { name: 'Next.js' }, { name: 'Tailwind' }, {name: 'TypeScript'}, {name: 'CSS'}, { name: 'Redux Toolkit' }
+  ],
+  image: '/images/gold.png',
+  live: 'https://www.thegoldscarf.com/',
+  github: 'https://github.com/thegoldscarf/user-webapp'
+},
+{
+  num: '04',
+  category: 'Frontend',
+  title: "TheGoldScarf Brand's Dashboard",
+  description:
+    'A dedicated dashboard for partner brands to manage their business. Features include product uploads, order management, a wallet system, and tools to track sales performance.',
+  stack: [
+    { name: 'Next.js' }, { name: 'Tailwind' }, {name: 'TypeScript'}, { name: 'Redux Toolkit' }
+  ],
+  image: '/images/brand.png',
+  live: 'https://brand.thegoldscarf.com/',
+  github: 'https://github.com/thegoldscarf/brand-dashboard'
+},
+
+{
+  num: '05',
+  category: 'Frontend',
+  title: "ScrumSage Web App",
+  description:
+    "An AI-powered companion for managing scrum activities, tracking team progress, and generating insightful weekly summaries to boost productivity.",
+  stack: [
+    { name: 'Next.js' }, { name: 'Tailwind' }, {name: 'TypeScript'}, { name: 'Redux Toolkit' }
+  ],
+  image: '/images/scrum.png',
+  live: 'https://www.globalplugservices.com/',
+  github: 'https://github.com/Scrum-Sage/web-app'
+},
+{
+  num: '06',
+  category: 'Frontend',
+  title: "WorkWave HR",
+  description:
+    "A comprehensive HR platform that helps companies manage employees with ease — including leave tracking, attendance, payroll, compensation, and more.",
+  stack: [
+    { name: 'React.Js' }, { name: 'CSS' }, { name: 'Redux' }, { name: 'Ant-Design'}
+  ],
+  image: '/images/work.png',
+  live: 'https://workwavehr.net/',
+  github: 'https://gitlab.com/enterprisessl-group/workwavehr-frontend'
+},
+{
+  num: '07',
+  category: 'Frontend',
+  title: "WorkWave Super Admin",
+  description:
+    "An advanced admin dashboard for Soft Solution Limited to manage WorkWave HR subscriptions, assign customer modules, and monitor key business statistics.",
+  stack: [
+    { name: 'React.Js' }, { name: 'CSS' }, { name: 'Redux' }, { name: 'Ant-Design'}
+  ],
+  image: '',
+  live: '',
+  github: 'https://gitlab.com/enterprisessl-group/workwavehr-adim'
+},
+{
+  num: '08',
+  category: 'Frontend',
+  title: "Happy Homes",
+  description:
+    "A modern dating app designed for Nigeria, making it easy for users to find love, friendships, and meaningful connections through a seamless experience.",
+  stack: [
+    { name: 'Next.js' }, { name: 'Tailwind' }, { name: 'Redux Toolkit' }
+  ],
+  image: '/images/happy.png',
+  live: 'https://happyhomecreators.com/',
+  github: 'https://gitlab.com/enterprisessl-group/happy-homes-frontend'
+},
+
 ]
 
 
@@ -111,7 +154,7 @@ const Work = () => {
               {/* stock */}
               <ul className="flex gap-4">
                 {project.stack.map((item, index) => (
-                  <li key={index} className="text-xl text-accent">
+                  <li key={index} className="text-base text-accent">
                     {item.name}
                     {/* remove the last comma */}
                     {index !== project.stack.length - 1 && ','}
@@ -121,7 +164,7 @@ const Work = () => {
               {/* border */}
               <div className="border border-white/20"></div>
               {/* button */}
-              <div className="flex gap-4 items-center mt-4">
+              <div className="flex gap-4 items-center mt-2">
                 {/* live project button */}
                 <Link href={project.live} target="_blank">
                   <TooltipProvider delayDuration={100}>

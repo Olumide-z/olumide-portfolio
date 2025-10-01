@@ -37,19 +37,19 @@ const experience = {
     "Front-End Developer with a strong track record of creating impactful digital products that blend functionality with exceptional user experience. Skilled in HTML, CSS, JavaScript, and TypeScript, with hands-on expertise in modern frameworks for building sleek, responsive, and interactive interfaces. Passionate about sharing knowledge through teaching, and dedicated to continuous growth by staying ahead of evolving technology trends.",
   items: [
     {
-      company: "Tech Solutions",
+      company: "Soft Solutions Limited. Nigeria.",
       position: "Frontend Developer",
-      duration: "Jan 2020 - Present",
+      duration: "May 2025 - Present",
     },
     {
-      company: "Tech Solutions",
+      company: "Global Plug Services, United Kingdom.",
       position: "Frontend Developer",
-      duration: "Jan 2020 - Present",
+      duration: "Apr 2025 - Present",
     },
     {
-      company: "Tech Solutions",
+      company: "TheGoldScarf, United Kingdom.",
       position: "Frontend Developer",
-      duration: "Jan 2020 - Present",
+      duration: "Feb 2023 - April 2025",
     },
   ],
 };
