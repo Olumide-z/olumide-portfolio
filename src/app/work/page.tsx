@@ -309,7 +309,7 @@ const Work = () => {
   const handleSlideChange = (swiper: any) => {
     setCurrentIndex(swiper.activeIndex);
   };
-
+  //
   const getDomain = (url: string) => {
     try {
       if (url.startsWith("/")) return "olumide-ilesanmi (live portfolio)";
