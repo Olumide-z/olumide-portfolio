@@ -2,27 +2,58 @@
 
 import React, { useState } from "react";
 
-import { FaHtml5, FaCss3, FaVuejs } from "react-icons/fa";
+import { FaHtml5, FaCss3, FaNodeJs } from "react-icons/fa";
+import { TbBrandReactNative } from "react-icons/tb";
+import {
+  FiBriefcase,
+  FiBookOpen,
+  FiCode,
+  FiUser,
+  FiMapPin,
+  FiCalendar,
+  FiAward,
+  FiPhone,
+  FiMail,
+  FiGlobe,
+  FiClock,
+  FiFlag,
+} from "react-icons/fi";
 import {
   SiJavascript,
   SiTypescript,
   SiReact,
   SiNextdotjs,
+  SiVuedotjs,
   SiRedux,
+  SiReactquery,
+  SiTailwindcss,
   SiSass,
   SiGit,
-  SiBootstrap,
+  SiJest,
+  SiPython,
+  SiFastapi,
+  SiDjango,
+  SiSqlalchemy,
+  SiPostgresql,
+  SiRedis,
+  SiCelery,
+  SiDocker,
+  SiAmazonwebservices,
+  SiPytest,
+  SiJsonwebtokens,
+  SiExpress,
+  SiPrisma,
 } from "react-icons/si";
 
 // about me
 const about = {
   title: "About me",
   decription:
-    "I am a Frontend Developer with proven experience delivering scalable and user-focused web applications across multiple industries.",
+    "I am a Software Engineer with proven experience delivering scalable and user-focused web applications across multiple industries.",
   info: [
     { fieldName: "Name", fieldValue: "Olumide Ilesanmi" },
-    { fieldName: "Phone", fieldValue: "091 692 658 87" },
-    { fieldName: "Experience", fieldValue: "3+ years" },
+    { fieldName: "Phone", fieldValue: "09169265887" },
+    { fieldName: "Experience", fieldValue: "4+ years" },
     { fieldName: "Nationality", fieldValue: "Nigerian" },
     { fieldName: "Freelance", fieldValue: "Avaliable" },
     { fieldName: "Email", fieldValue: "Olumideilesanmi10@gmail.com" },
@@ -34,22 +65,50 @@ const experience = {
   icon: "💼",
   title: "My Experience",
   description:
-    "Front-End Developer with a strong track record of creating impactful digital products that blend functionality with exceptional user experience. Skilled in HTML, CSS, JavaScript, and TypeScript, with hands-on expertise in modern frameworks for building sleek, responsive, and interactive interfaces. Passionate about sharing knowledge through teaching, and dedicated to continuous growth by staying ahead of evolving technology trends.",
+    "Software Engineer with a strong track record of delivering scalable, user-focused web applications across HR, identity services, e-commerce, and smart-building domains. Experienced across the full stack — building polished frontends with React, Next.js, and TypeScript, alongside backend integrations and CMS-driven content workflows.",
   items: [
     {
-      company: "Soft Solutions Limited. Nigeria.",
-      position: "Frontend Developer",
-      duration: "May 2025 - Present",
+      company: "Soft Solutions Limited",
+      location: "Nigeria",
+      position: "Frontend Engineer",
+      duration: "May 2025 – Present",
+      bullets: [
+        "Develop React and TypeScript interfaces for a multi-tenant HR platform adopted by 8 companies and serving 400+ employees.",
+        "Build interfaces for onboarding, attendance, leave, task tracking, compensation, and performance evaluations.",
+        "Collaborate with designers, backend engineers, and stakeholders to streamline HR workflows, reducing manual HR processing time by 60%.",
+      ],
     },
     {
-      company: "Global Plug Services, United Kingdom.",
-      position: "Frontend Developer",
-      duration: "Apr 2025 - Present",
+      company: "NXLO Technology",
+      location: "United Arab Emirates",
+      position: "Software Engineer (Freelance)",
+      duration: "February 2026 – July 2026",
+      bullets: [
+        "Built and shipped the marketing website for a building intelligence and ESG software company.",
+        "Implemented English and Arabic localization with right-to-left (RTL) layout support.",
+        "Integrated Sanity CMS so the team could publish blog posts and update website content without developer involvement.",
+      ],
     },
     {
-      company: "TheGoldScarf, United Kingdom.",
-      position: "Frontend Developer",
-      duration: "Feb 2023 - April 2025",
+      company: "Global Plug Services",
+      location: "United Kingdom",
+      position: "Frontend Engineer (Contract)",
+      duration: "February 2025 – January 2026",
+      bullets: [
+        "Built a responsive web application using React, Next.js, and TypeScript with a cross-functional team for identity, visa, and passport processing services.",
+        "Developed an internal CRM interface for managing applications, documents, customer communications, and service workflows.",
+      ],
+    },
+    {
+      company: "TheGoldScarf",
+      location: "United Kingdom",
+      position: "Frontend Engineer",
+      duration: "November 2022 – May 2025",
+      bullets: [
+        "Delivered web and mobile applications for TheGoldScarf, a software services and e-commerce company.",
+        "Worked on its fashion platform and client projects including VowThread and ScrumSage, using React, Next.js, and TypeScript.",
+        "Wrote frontend tests with Vitest, achieving 80% code coverage.",
+      ],
     },
   ],
 };
@@ -70,20 +129,57 @@ const education = {
 const skills = {
   title: "My Skills",
   description:
-    "I have a strong foundation in frontend development, with expertise in the following technologies:",
-  skillList: [
-    { name: "HTML5", icon: <FaHtml5 className="text-4xl" /> },
-    { name: "CSS3", icon: <FaCss3 className="text-4xl" /> },
-    { name: "JavaScript", icon: <SiJavascript className="text-4xl" /> },
-    { name: "TypeScript", icon: <SiTypescript className="text-4xl" /> },
-    { name: "React", icon: <SiReact className="text-4xl" /> },
-    { name: "Next.js", icon: <SiNextdotjs className="text-4xl" /> },
-    { name: "Vue.js", icon: <FaVuejs className="text-4xl" /> },
-    { name: "Git and Github", icon: <SiGit className="text-4xl" /> },
-    { name: "SASS", icon: <SiSass className="text-4xl" /> },
-    { name: "Boostrap", icon: <SiBootstrap className="text-4xl" /> },
-    { name: "Redux and Redux Toolkit", icon: <SiRedux className="text-4xl" /> },
-    
+    "I work across the full stack, building polished, responsive interfaces on the frontend and secure, scalable APIs on the backend with the following technologies:",
+  categories: [
+    {
+      label: "Frontend",
+      items: [
+        { name: "HTML5", icon: <FaHtml5 className="text-4xl" /> },
+        { name: "CSS3", icon: <FaCss3 className="text-4xl" /> },
+        { name: "JavaScript", icon: <SiJavascript className="text-4xl" /> },
+        { name: "TypeScript", icon: <SiTypescript className="text-4xl" /> },
+        { name: "React", icon: <SiReact className="text-4xl" /> },
+        { name: "Next.js", icon: <SiNextdotjs className="text-4xl" /> },
+        { name: "Vue.js", icon: <SiVuedotjs className="text-4xl" /> },
+        {
+          name: "React Native",
+          icon: <TbBrandReactNative className="text-4xl" />,
+        },
+        { name: "Redux Toolkit", icon: <SiRedux className="text-4xl" /> },
+        { name: "React Query", icon: <SiReactquery className="text-4xl" /> },
+        { name: "Tailwind CSS", icon: <SiTailwindcss className="text-4xl" /> },
+        { name: "SASS", icon: <SiSass className="text-4xl" /> },
+      ],
+    },
+    {
+      label: "Backend",
+      items: [
+        { name: "Python", icon: <SiPython className="text-4xl" /> },
+        { name: "FastAPI", icon: <SiFastapi className="text-4xl" /> },
+        { name: "Django & DRF", icon: <SiDjango className="text-4xl" /> },
+        { name: "Node.js", icon: <FaNodeJs className="text-4xl" /> },
+        { name: "Express.js", icon: <SiExpress className="text-4xl" /> },
+        { name: "SQLAlchemy", icon: <SiSqlalchemy className="text-4xl" /> },
+        { name: "PostgreSQL", icon: <SiPostgresql className="text-4xl" /> },
+        { name: "Redis", icon: <SiRedis className="text-4xl" /> },
+        { name: "Celery", icon: <SiCelery className="text-4xl" /> },
+        { name: "Prisma", icon: <SiPrisma className="text-4xl" /> },
+        {
+          name: "JWT & OAuth2",
+          icon: <SiJsonwebtokens className="text-4xl" />,
+        },
+      ],
+    },
+    {
+      label: "Tools & DevOps",
+      items: [
+        { name: "Git & GitHub", icon: <SiGit className="text-4xl" /> },
+        { name: "Docker", icon: <SiDocker className="text-4xl" /> },
+        { name: "AWS", icon: <SiAmazonwebservices className="text-4xl" /> },
+        { name: "Jest", icon: <SiJest className="text-4xl" /> },
+        { name: "pytest", icon: <SiPytest className="text-4xl" /> },
+      ],
+    },
   ],
 };
 
@@ -117,35 +213,49 @@ const Resume = () => {
           onValueChange={setTab}
         >
           <TabsList className="flex flex-col w-full max-w-[380px] mx-auto xl:mx-0 gap-6">
-            <TabsTrigger value="experience">Experience</TabsTrigger>
-            <TabsTrigger value="education">Education</TabsTrigger>
-            <TabsTrigger value="skills">Skills</TabsTrigger>
-            <TabsTrigger value="about">About me</TabsTrigger>
+            <TabsTrigger value="experience" className="gap-2">
+              <FiBriefcase className="text-xl" />
+              <span>Experience</span>
+            </TabsTrigger>
+            <TabsTrigger value="education" className="gap-2">
+              <FiBookOpen className="text-xl" />
+              <span>Education</span>
+            </TabsTrigger>
+            <TabsTrigger value="skills" className="gap-2">
+              <FiCode className="text-xl" />
+              <span>Skills</span>
+            </TabsTrigger>
+            <TabsTrigger value="about" className="gap-2">
+              <FiUser className="text-xl" />
+              <span>About me</span>
+            </TabsTrigger>
           </TabsList>
 
           {/* content */}
-          <div className="min-h-[70vh] w-full">
+          <div className="min-h-[70vh] w-full pb-6">
             <TabsContent value="experience" className="w-full">
               <div className="flex flex-col gap-[30px] text-center xl:text-left">
                 <h3 className="text-4xl font-bold">{experience.title}</h3>
-                <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
-                  {experience.description}
-                </p>
-                <ScrollArea className="h-[400px]">
-                  <ul className="grid grid-cols-1 lg:grid-cols-2 gap-[30px]">
+                <ScrollArea className="h-[430px] pr-2">
+                  <ul className="relative flex flex-col gap-0 border-l border-white/10 ml-3">
                     {experience.items.map((item, index) => (
-                      <li
-                        key={index}
-                        className="bg-[#232329] h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1"
-                      >
-                        <span className="text-accent">{item.duration}</span>
-                        <h3 className="text-xl max-w-[260px] min-h-[60px] text-center lg:text-left">
+                      <li key={index} className="relative pl-8 pb-10 last:pb-0">
+                        {/* Timeline dot */}
+                        <span className="absolute -left-[9px] top-1 w-[18px] h-[18px] rounded-full border-2 border-accent bg-[#1c1c22] flex items-center justify-center">
+                          <span className="w-[6px] h-[6px] rounded-full bg-accent" />
+                        </span>
+                        {/* Duration badge */}
+                        <span className="inline-block text-xs font-medium text-accent bg-accent/10 border border-accent/20 rounded-full px-3 py-0.5 mb-2">
+                          {item.duration}
+                        </span>
+                        {/* Role */}
+                        <h4 className="text-lg font-semibold leading-snug text-white">
                           {item.position}
-                        </h3>
-                        <div className="flex items-center gap-3">
-                          <span className="w-[6px] h-[6px] bg-accent rounded-full"></span>
-                          <p className="text-white/60">{item.company}</p>
-                        </div>
+                        </h4>
+                        {/* Company · Location */}
+                        <p className="text-sm text-white/50 mt-0.5">
+                          {item.company} &mdash; {item.location}
+                        </p>
                       </li>
                     ))}
                   </ul>
@@ -156,28 +266,42 @@ const Resume = () => {
             <TabsContent value="education" className="w-full">
               <div className="flex flex-col gap-[30px] text-center xl:text-left">
                 <h3 className="text-4xl font-bold">{education.title}</h3>
-                <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
-                  {education.description}
-                </p>
-                <ScrollArea className="h-[400px]">
-                  <ul className="grid grid-cols-1 lg:grid-cols-2 gap-[30px]">
-                    {education.items.map((item, index) => (
-                      <li
-                        key={index}
-                        className="bg-[#232329] h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1"
-                      >
-                        <span className="text-accent">{item.duration}</span>
-                        <h3 className="text-xl max-w-[260px] min-h-[60px] text-center lg:text-left">
-                          {item.institution}
-                        </h3>
-                        <div className="flex items-center gap-3 mt-7">
-                          <span className="w-[6px] h-[6px] bg-accent rounded-full"></span>
-                          <p className="text-white/60">{item.degree}</p>
-                        </div>
-                      </li>
-                    ))}
-                  </ul>
-                </ScrollArea>
+                <div className="flex flex-col gap-5">
+                  {education.items.map((item, index) => (
+                    <div
+                      key={index}
+                      className="relative bg-[#232329] rounded-2xl px-8 py-7 overflow-hidden group"
+                    >
+                      {/* Accent bar on the left */}
+                      <span className="absolute left-0 top-0 h-full w-1 bg-accent rounded-l-2xl" />
+
+                      {/* Degree badge */}
+                      <div className="flex items-center gap-2 mb-4">
+                        <FiAward className="text-accent text-base shrink-0" />
+                        <span className="text-accent text-xs font-semibold uppercase tracking-widest">
+                          {item.degree}
+                        </span>
+                      </div>
+
+                      {/* Institution name */}
+                      <h4 className="text-xl font-bold text-white leading-snug mb-4">
+                        {item.institution}
+                      </h4>
+
+                      {/* Meta row */}
+                      <div className="flex flex-wrap items-center gap-x-5 gap-y-2 text-sm text-white/50">
+                        <span className="flex items-center gap-1.5">
+                          <FiCalendar className="text-accent/70 text-sm" />
+                          {item.duration}
+                        </span>
+                        <span className="flex items-center gap-1.5">
+                          <FiMapPin className="text-accent/70 text-sm" />
+                          Akure, Ondo State, Nigeria
+                        </span>
+                      </div>
+                    </div>
+                  ))}
+                </div>
               </div>
             </TabsContent>
             {/* skills */}
@@ -185,51 +309,106 @@ const Resume = () => {
               <div className="flex flex-col gap-[30px]">
                 <div className="flex flex-col gap-[30px] text-center xl:text-left">
                   <h3 className="text-4xl font-bold">{skills.title}</h3>
-                  <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
+                  <p className="max-w-[800px] text-white/60 mx-auto xl:mx-0">
                     {skills.description}
                   </p>
                 </div>
-                <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 xl:gap-[30px]">
-                  {skills.skillList.map((skill, index) => (
-                    <li key={index}>
-                      <TooltipProvider delayDuration={100}>
-                        <Tooltip>
-                          <TooltipTrigger className="w-full h-[150px] bg-[#232329] rounded-xl flex justify-center items-center group">
-                            <div className="group-hover:text-accent transition-all duration-300">
-                              {skill.icon}
-                            </div>
-                          </TooltipTrigger>
-                          <TooltipContent>
-                            <p className="capitalize">{skill.name}</p>
-                          </TooltipContent>
-                        </Tooltip>
-                      </TooltipProvider>
-                    </li>
-                  ))}
-                </ul>
+                <ScrollArea className="h-[500px] pr-2">
+                  <div className="flex flex-col gap-8">
+                    {skills.categories.map((category) => (
+                      <div key={category.label} className="flex flex-col gap-4">
+                        {/* Category label */}
+                        <div className="flex items-center gap-3">
+                          <span className="text-accent font-semibold text-sm uppercase tracking-widest">
+                            {category.label}
+                          </span>
+                          <div className="flex-1 h-px bg-white/10" />
+                        </div>
+                        {/* Skill icons */}
+                        <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-4">
+                          {category.items.map((skill, index) => (
+                            <li key={index}>
+                              <TooltipProvider delayDuration={100}>
+                                <Tooltip>
+                                  <TooltipTrigger className="w-full h-[100px] bg-[#232329] rounded-xl flex justify-center items-center group">
+                                    <div className="group-hover:text-accent transition-all duration-300">
+                                      {skill.icon}
+                                    </div>
+                                  </TooltipTrigger>
+                                  <TooltipContent className="z-[9999]">
+                                    <p className="capitalize">{skill.name}</p>
+                                  </TooltipContent>
+                                </Tooltip>
+                              </TooltipProvider>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    ))}
+                  </div>
+                </ScrollArea>
               </div>
             </TabsContent>
             {/* about me */}
-            <TabsContent
-              value="about"
-              className="w-full text-center xl:text-left"
-            >
-              <div className="flex flex-col gap-[30px]">
-                <h3 className="text-4xl font-bold">{about.title}</h3>
-                <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
-                  {about.decription}
-                </p>
-                <ul className="grid grid-cols-1 xl:grid-cols-2 gap-y-6 gap-x-4 max-w-[620px] mx-auto xl:mx-0">
-                  {about.info.map((item, index) => (
-                    <li
+            <TabsContent value="about" className="w-full">
+              <div className="flex flex-col gap-8">
+                {/* Header */}
+                <div className="text-center xl:text-left">
+                  <h3 className="text-4xl font-bold mb-3">{about.title}</h3>
+                  <p className="max-w-[800px] text-white/60 mx-auto xl:mx-0 leading-relaxed">
+                    {about.decription}
+                  </p>
+                </div>
+
+                {/* Info grid */}
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  {[
+                    {
+                      icon: <FiUser />,
+                      label: "Name",
+                      value: "Olumide Ilesanmi",
+                    },
+                    { icon: <FiPhone />, label: "Phone", value: "09169265887" },
+                    {
+                      icon: <FiClock />,
+                      label: "Experience",
+                      value: "4+ years",
+                    },
+                    {
+                      icon: <FiFlag />,
+                      label: "Nationality",
+                      value: "Nigerian",
+                    },
+                    {
+                      icon: <FiBriefcase />,
+                      label: "Freelance",
+                      value: "Available",
+                    },
+                    {
+                      icon: <FiMail />,
+                      label: "Email",
+                      value: "Olumideilesanmi10@gmail.com",
+                    },
+                    { icon: <FiGlobe />, label: "Languages", value: "English" },
+                  ].map((item, index) => (
+                    <div
                       key={index}
-                      className="flex justify-between items-center xl:justify-start gap-4"
+                      className="flex items-center gap-4 bg-[#232329] rounded-xl px-5 py-4 group hover:border hover:border-accent/30 border border-transparent transition-all duration-300"
                     >
-                      <span className="text-white/60">{item.fieldName}</span>
-                      <span className="">{item.fieldValue}</span>
-                    </li>
+                      <div className="text-accent text-lg shrink-0">
+                        {item.icon}
+                      </div>
+                      <div className="flex flex-col min-w-0">
+                        <span className="text-white/40 text-xs uppercase tracking-widest mb-0.5">
+                          {item.label}
+                        </span>
+                        <span className="text-white text-sm font-medium truncate">
+                          {item.value}
+                        </span>
+                      </div>
+                    </div>
                   ))}
-                </ul>
+                </div>
               </div>
             </TabsContent>
           </div>

@@ -80,10 +80,10 @@
   --sidebar-border: oklch(0.929 0.013 255.508);
   --sidebar-ring: oklch(0.704 0.04 256.788);
   /* --accent: #00ff99;  */
-  --accent: #934790; 
+  --accent: #2391FF; 
   /*  */
   /* --accent-hover: #00e187; */
-  --accent-hover: #6A0066;
+  --accent-hover: #0F42C0;
 }
 
 .dark {
@@ -130,7 +130,7 @@
     max-width: 1300px !important;
   }
   .h1 {
-    @apply text-[48px] xl:text-[68px] leading-[1.1] font-semibold;
+    @apply text-[40px] xl:text-[55px] leading-[1.1] font-semibold;
   }
   .h2 {
     @apply text-[36px] xl:text-[48px] leading-[1.1] font-semibold;
